@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kashish 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:
+   linear-gradient(rgba(255,248,235,0.95),rgba(255,248,235,0.95)),
+   url("https://www.transparenttextures.com/patterns/squared-paper.png");
+  color:#5a4033;
+  overflow-x:hidden;
+  position:relative;
+}
+
+/* DOODLES */
+.doodle{
+  position:absolute;
+  font-size:34px;
+  opacity:0.45;
+  pointer-events:none;
+}
+
+/* TOP + MID + BOTTOM */
+.d1{top:5%;left:4%;}
+.d2{top:10%;right:6%;}
+.d3{top:18%;left:12%;}
+.d4{top:26%;right:10%;}
+.d5{top:34%;left:4%;}
+.d6{top:42%;right:6%;}
+.d7{top:50%;left:10%;}
+.d8{top:58%;right:12%;}
+.d9{top:66%;left:5%;}
+.d10{top:74%;right:8%;}
+.d11{top:82%;left:12%;}
+.d12{top:88%;right:10%;}
+.d13{bottom:12%;left:6%;}
+.d14{bottom:8%;right:8%;}
+.d15{bottom:4%;left:45%;}
+
+.front{
+  padding:70px 20px 40px;
+  text-align:center;
+}
+
+.front h1{
+  font-family:'Comic Neue',cursive;
+  font-size:42px;
+  color:#8b5e3c;
+  margin-bottom:10px;
+}
+
+.front p{
+  font-size:16px;
+  color:#7a4d32;
+  margin-bottom:35px;
+}
+
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  margin-bottom:40px;
+}
+
+.small-card{
+  background:#e6c6a8;
+  padding:18px 22px;
+  border-radius:18px;
+  box-shadow:5px 5px 0 #c59b78;
+  font-family:'Comic Neue',cursive;
+  font-size:15px;
+}
+
+.search-box input{
+  width:80%;
+  max-width:480px;
+  padding:15px 20px;
+  border-radius:25px;
+  border:2px dashed #c9a27d;
+  font-size:16px;
+  outline:none;
+  background:#fff6ec;
+}
+
+.result{
+  display:none;
+  padding:40px 20px 60px;
+}
+
+.title{
+  text-align:center;
+  font-family:'Comic Neue',cursive;
+  font-size:38px;
+  color:#8b5e3c;
+  margin-bottom:30px;
+}
+
+.card{
+  background:#d8b59c;
+  border-radius:22px;
+  padding:26px;
+  margin:20px auto;
+  max-width:950px;
+  box-shadow:6px 6px 0 #b48b6a;
+}
+
+.card p{
+  line-height:1.9;
+  font-size:17px;
+  color:#4a2f22;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+  margin-top:25px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:16px;
+  border:3px solid #fff;
+}
+
+.hearts span{
+  position:fixed;
+  top:-10%;
+  color:#ff8fab;
+  animation:fall linear forwards;
+}
+
+@keyframes fall{
+  to{transform:translateY(120vh);opacity:0;}
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  font-family:'Comic Neue',cursive;
+  color:#7a4d32;
+}
+</style>
+</head>
+
+<body>
+
+<!-- DOODLES -->
+<div class="doodle d1">🤍</div>
+<div class="doodle d2">🫶</div>
+<div class="doodle d3">💖</div>
+<div class="doodle d4">🌸</div>
+<div class="doodle d5">🐰</div>
+<div class="doodle d6">💞</div>
+<div class="doodle d7">✨</div>
+<div class="doodle d8">🧸</div>
+<div class="doodle d9">💕</div>
+<div class="doodle d10">🌼</div>
+<div class="doodle d11">🤍</div>
+<div class="doodle d12">💗</div>
+<div class="doodle d13">🐻</div>
+<div class="doodle d14">🫂</div>
+<div class="doodle d15">💝</div>
+
+<div class="hearts"></div>
+
+<section class="front">
+  <h1>janab kaise ho 💌</h1>
+  <p>a little search, a lot of feelings</p>
+
+  <div class="cards">
+    <div class="small-card">friendship 🌸</div>
+    <div class="small-card">trust 🤍</div>
+    <div class="small-card">memories ✨</div>
+    <div class="small-card">forever 🫶</div>
+  </div>
+
+  <div class="search-box">
+    <input type="text" placeholder="type & press enter…" onkeydown="showResult(event)">
+  </div>
+</section>
+
+<section class="result" id="result">
+
+  <div class="title">
+    KASHISH — the most amazing person in the world 💖
+  </div>
+
+  <div class="card">
+    <p>
+      <b>Kashish</b> — word jiska matlab attraction se kahin zyada hai ✨  
+      Aapne jis person ke liye search kiya hai,  
+      vo world ki best <b>param mitr</b> hai 💜  
+      itni pyari aur cute ki agar world ki best sakhi suggest karni ho,  
+      to sabse pehla naam isi ladki ka aata hai 🫶  
+      <br><br>
+      Is ladki ke andar kuch to khaas hai  
+      jo kisi aur mein ho hi nahi sakta 🌙  
+      itni simple, itni soft-hearted aur itni pyari  
+      ki tareef ke liye shabd bhi kam pad jaate hain 🥹  
+      <br><br>
+      Agar ye ladki kisi ki life mein aa jaaye,  
+      to vo insaan bohot hi kismatwala hota hai 🍀  
+      jise Kashish jaisi <b>rare diamond</b>  
+      as a param mitr mil jaaye 💎  
+      <br><br>
+      Ek baar Kashish se dosti ho jaaye,  
+      to us dosti ke aage kisi cheez ki value nahi rehti 🤍  
+      kyunki life ki sabse keemti cheez  
+      Kashish ki dosti ke roop mein mil jaati hai 💫  
+      <br><br>
+      Kashish, tumhari value Yedii ki life mein itni zyada hai  
+      ki duniya ki sabse mehngi cheez bhi  
+      tumhari dosti ke barabar nahi ho sakti 🖤  
+      agar tum hazaar baar naraz hogi  
+      to Yedii hazaar baar manayegi 🫂  
+      <br><br>
+      Tum Yedii ki life ki <b>IDOL</b> ho 🌸  
+      aur tumse milne ke baad  
+      Yedii khud ko bohot lucky maanti hai  
+      ki use world ki best <b>PARAM MITR</b> mili 💖  
+      <br><br>
+      Bhagwan ji ko dil se  
+      itnaaaaa bada <b>THANK YOU</b> 🙏✨
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="gallery">
+      <img src="img1.jpg">
+      <img src="img2.jpg">
+      <img src="img3.jpg">
+      <img src="img4.jpg">
+      <img src="img5.jpg">
+      <img src="img6.jpg">
+    </div>
+
+    <p style="margin-top:22px;font-style:italic;text-align:center;">
+      Kuch log sirf life ka hissa nahi bante,  
+      woh life ka sabse pyaara ehsaas ban jaate hain 🤍  
+      Kashish bhi wahi ehsaas hai —  
+      jiske saath dosti sirf ek rishta nahi  
+      balki sukoon, safety aur hamesha ke liye ek ghar jaisi lagti hai.  
+      Ye friendship waqt ke saath kam nahi hoti,  
+      balki har din aur gehri hoti jaati hai 💫
+    </p>
+  </div>
+
+</section>
+
+<footer>
+  made with 💖 for kashish
+</footer>
+
+<script>
+function showResult(e){
+  if(e.key==="Enter"){
+    document.getElementById("result").style.display="block";
+    const c=document.querySelector(".hearts");
+    c.innerHTML="";
+    for(let i=0;i<60;i++){
+      let h=document.createElement("span");
+      h.innerHTML="❤";
+      h.style.left=Math.random()*100+"vw";
+      h.style.fontSize=(18+Math.random()*20)+"px";
+      h.style.animationDuration=(4+Math.random()*4)+"s";
+      c.appendChild(h);
+    }
+  }
+}
+</script>
+
+</body>
+</html>
